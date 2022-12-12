@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <meta name="fbPage"> -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook</title>
+  <link rel="shortcut icon" href="./assest/imageAndIcon/facebook.png" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
+  <!-- css file  -->
+  <link rel="stylesheet" href="./assest/css/style.css">
+
+</head>
+<body>
+  <header class="d-flex align-items-center shadow-2 position-fixed top-nav" style="width: 100%;">
+    <nav class="nav nav-light  container-fluid d-flex justify-content-between px-2 "
+      style="background-color:rgb(255, 255, 255) ;">
+
+      <!-- Left Navbar Content -->
+      <div class=" d-flex justify-content-between align-items-center">
+        <span>
+          <i class="bi bi-facebook fs-1 " style="color:#1976D2 ; "></i>
+        </span>
+        <form class="mx-3" id="nav_searchBar">
+          <div class="input-group">
+            <div class="form-outline">
+              <input id="search-input" type="search" id="form1" class="form-control" />
+              <label class="form-label" for="form1">Search</label>
+            </div>
+            <button id="search-button" type="button" class="btn btn-primary">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- End Left Navbar Content -->
+
+      <!-- Mid Navbar Content -->
+      <div class="d-flex align-items-center  justify-content-between" id="centerIcon">
+        <div>
+          <b class="nav-link active" data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Home"><i class="bi bi-house " style="color: blue; "></i></b>
+        </div>
+        <div>
+          <b class="nav-link" data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Watch"><i class="bi bi-camera-reels "></i></b>
+        </div>
+        <div>
+          <b class="nav-link" data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="MarketPlace"><i class="bi bi-people "></i></b>
+        </div>
+      </div>
+      <!--End  Mid Navbar Content -->
+
+      <!--  Last Navbar Content -->
+      <div class="d-flex align-items-center   " id="EndIcon">
+
+
+        <div class="dropdown"><b class="nav-link" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown"
+            aria-expanded="false" >
+            <i class="bi bi-grid-3x3-gap-fill " id="toggle_Icon" ></i>
+
+          </b>
+          <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuLink" id="grid_menu_item">
+            <h5>Menu</h5>
+            <form>
+              <input type="search" name="search" id="form1" class="form-control" placeholder="Search........" />
+            </form>
+            <h5 class="pt-5">Social</h5>
+            <li class="dropdown-item rounded-4 container-fluid">
+              <a href="" class="nav-link d-flex align-items-center ">
+                <i class="bi bi-people-fill fs-4   rounded-circle" style="color:rgb(3, 15, 62);"></i>
+                <span class="d-grid mx-2 mt-2">
+                  <big style="color:black;">Groups</big>
+                  <code style="transform:translateY(-6px);color:grey"
+                    class="">Connect with people who share your interests.</code>
+                </span>
+              </a>
+            </li>
+            <li class="dropdown-item rounded-4">
+              <a href="" class="nav-link d-flex align-items-center ">
+                <i class="bi bi-newspaper fs-4   rounded-circle" style="color:rgb(3, 15, 62);"></i>
+                <span class="d-grid mx-2 mt-2">
+                  <big style="color:black;">News Feed</big>
+                  <code style="transform:translateY(-6px);color:grey" class="">See relevant posts from people.</code>
+                </span>
+              </a>
+            </li>
+            <li class="dropdown-item rounded-4">
+              <a href="" class="nav-link d-flex align-items-center ">
+                <i class="bi bi-star-half fs-4   rounded-circle" style="color:rgb(3, 15, 62);"></i>
+                <span class="d-grid mx-2 mt-2">
+                  <big style="color:black;">Favorites</big>
+                  <code style="transform:translateY(-6px);color:grey" class="">View Posts by Favorites</code>
+                </span>
+              </a>
+            </li>
+            <li class="dropdown-item rounded-4">
+              <a href="" class="nav-link d-flex align-items-center ">
+                <i class="bi bi-file-earmark-person-fill fs-4   rounded-circle" style="color:rgb(3, 15, 62);"></i>
+                <span class="d-grid mx-2 mt-2">
+                  <big style="color:black;">Most Recent </big>
+                  <code style="transform:translateY(-6px);color:grey"
+                    class="">See the most recent post form your friends.</code>
+                </span>
+              </a>
+            </li>
+            <li class="dropdown-item rounded-4">
+              <a href="" class="nav-link d-flex align-items-center ">
+                <i class="bi bi-file-earmark-break-fill fs-4   rounded-circle" style="color:rgb(3, 15, 62);"></i>
+                <span class="d-grid mx-2 mt-2">
+                  <big style="color:black;">Pages</big>
+                  <code style="transform:translateY(-6px);color:grey"
+                    class="">discover and connect with business on facebook</code>
+                </span>
+              </a>
+            </li>
+            <li class="dropdown-item rounded-4">
+              <a href="" class="nav-link d-flex align-items-center ">
+                <i class="bi bi-bag-check-fill fs-4   rounded-circle" style="color:rgb(3, 15, 62);"></i>
+                <span class="d-grid mx-2 mt-2">
+                  <big style="color:black;">Marketplace</big>
+                  <code style="transform:translateY(-6px);color:grey" class="">Busy and sell in your community.</code>
+                </span>
+              </a>
+            </li>
+            <li class="dropdown-item rounded-4">
+              <a href="" class="nav-link d-flex align-items-center ">
+                <i class="bi bi-people fs-4   rounded-circle" style="color:rgb(3, 15, 62);"></i>
+                <span class="d-grid mx-2 mt-2">
+                  <big style="color:black;">Friends</big>
+                  <code style="transform:translateY(-6px);color:grey" class="">Search for friends or people.</code>
+                </span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div><b class="nav-link">
+            <i class="bi bi-chat-square-fill " id="toggle_Icon" ></i>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+          </b></div>
+
+        <div><b class="nav-link ">
+            <i class="bi bi-bell-fill  " id="toggle_Icon"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+          </b></div>
+
+        <div><b type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+            <img src="./assest/imageAndIcon/profile-img.jpg" alt="MDB Logo" loading="lazy"
+              class="rounded-circle border border-3 border-primary profile_img" />
+              
+          </b>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="profile_menu_item">
+            <li>
+              <a class="dropdown-item d-flex align-items-center justify-content-between" href="#"
+                id="dropDown_profile_content">
+                <div class=" d-flex align-items-center">
+                  <img src="./assest/imageAndIcon/profile-img.jpg" alt="MDB Logo" loading="lazy"
+                    class="rounded-circle border border-3 border-secondary">
+                  <span class="text-dark  mx-2">Ranjan Kharel</span>
+                </div>
+                <span class="text-info" id="profile_tag">See All Profile <span
+                    class="badge badge-danger ms-2">12</span></span>
+              </a>
+            </li>
+            <li class="dropdown-item fs-5  ">
+              <a href="http://" class=" container-fluid  nav-link" style="width:100%;">
+                <span class="dropIcon p-2 rounded-5"><i class="bi bi-gear-fill"></i></span>
+                <span class="mx-2" style="color:black;">Setting & Privacy</span> <i
+                  class="bi bi-chevron-right mx-auto "></i></a>
+            </li>
+
+            <li class="dropdown-item fs-5"> <a href="http://" class=" container-fluid  nav-link" style="width:100%;">
+                <span class="dropIcon p-2 rounded-5"><i class="bi bi-question-circle-fill"></i></span><span
+                  class=" mx-2" style="color:black;">Help & Support</span> <i class="bi bi-chevron-right"></i></a>
+            </li>
+            <li class="dropdown-item fs-5"> <a href="http://" class=" container-fluid  nav-link"
+                style="width:100%;"><span class="dropIcon p-2 rounded-5"><i class="bi bi-moon-fill"></i></span> <span
+                  class=" mx-2" style="color:black;">Display & Accessibility</span> <i
+                  class="bi bi-chevron-right"></i></a></li>
+            <li class="dropdown-item fs-5"> <a href="http://" class=" container-fluid  nav-link" style="width:100%;">
+                <span class="dropIcon p-2 rounded-5"><i class="bi bi-exclamation-circle-fill"></i></span><span
+                  class=" mx-2" style="color:black;">Give Feedback</span> <i class="bi bi-chevron-right"></i></a></li>
+            <li class="dropdown-item fs-5"> <a href="http://" class=" container-fluid  nav-link" style="width:100%;">
+                <span class="dropIcon p-2 rounded-5"><i class="bi bi-arrow-right-circle-fill"></i></span><span
+                  class=" mx-2" style="color:black;">Log Out</span> <i class="bi bi-chevron-right"></i></a></li>
+            <div class="OtherLink p-2">
+              <a href="#">Privacy</a>
+              <a href="#">Term</a>
+              <a href="#">Advertising</a>
+              <a href="#">Ad choice</a>
+              <a href="#">Cookies</a>
+              <a href="#">More</a> <br>
+              <span>Meta &copy; 2022 </span>
+            </div>
+          </ul>
+        </div>
+
+      </div>
+      <!--End  Last Navbar Content -->
+    </nav>
+  </header>
+
+  <main class="container-fluid ">
+    <div class="row ">
+      <!-- Left social Side Bar -->
+      <section class="col-3  pt-5 mt-5" style="height:100vh;">
+        <aside id="left_aside">
+          <a href="" class="d-flex align-items-center">
+            <img src="./assest/imageAndIcon/profile-img.jpg " class="img-fluid rounded-circle" alt=""
+              style="width: 35px; height:35px;">
+            <span class="mx-2">Ranjan kharel</span>
+          </a>
+          <a href="" class="d-flex align-items-center">
+            <i class="bi bi-people-fill "></i>
+            <span class="mx-2 ">Friends</span>
+          </a>
+          <a href="" class="d-flex align-items-center">
+            <i class="bi bi-person-badge-fill "></i>
+            <span class="mx-2 ">Most Recent</span>
+          </a>
+          <a href="" class="d-flex align-items-center">
+            <i class="bi bi-people "></i>
+            <span class="mx-2 ">Groups</span>
+          </a>
+          <a href="" class="d-flex align-items-center">
+            <i class="bi bi-bag-check-fill "></i>
+            <span class="mx-2 ">MarketPlace</span>
+          </a>
+          <a href="" class="d-flex align-items-center">
+            <i class="bi bi-camera-reels-fill "></i>
+            <span class="mx-2 ">Watch</span>
+          </a>
+          <a href="" class="d-flex align-items-center">
+            <i class="bi bi-badge-ad "></i>
+            <span class="mx-2 ">Ad center</span>
+          </a>
+          <a href="" class="d-flex align-items-center">
+            <i class="bi bi-badge-ad-fill "></i>
+            <span class="mx-2 ">Ad Manager</span>
+          </a>
+          <a href="" class="d-flex align-items-center">
+            <i class="bi bi-globe-europe-africa "></i>
+            <span class="mx-2 ">Climate Science Center</span>
+          </a>
+
+        </aside>
+      </section>
+      <!-- End Left social Side Bar -->
+
+      <!-- Main Body -->
+      <section class="col-6  pt-5 mt-5" style="height:100vh;">
+        <div class="MID_content  container-fluid">
+          <div class="card container-fluid">
+            <!-- card  header-->
+            <div class="card-header d-flex justify-content-between align-items-center">
+
+              <picture>
+                <img src="./assest/imageAndIcon/profile-img.jpg" class="img-fluid rounded-circle " alt="profile"
+                  style="width: 50px; height:46px;">
+              </picture>
+              <form class="ms-2 container   ">
+                <div class="form-outline">
+                  <input type="text" id="formControlLg" class="form-control form-control-lg" style="width:80px" />
+                  <label class="form-label" for="formControlLg">What's on your Mind Dear user?</label>
+                </div>
+              </form>
+
+            </div>
+            <div id="CardFooter-Home">
+              <a href="" class="d-flex align-items-center">
+                <i class="bi bi-play-btn-fill " style="color:red;--fs:15px;"></i> <span class="text-center ">Live
+                  Video</span>
+              </a>
+              <a href="" class="d-flex align-items-center">
+                <i class="bi bi-images  " style="color:green"></i> <span class="text-center ">Photo/Video</span>
+              </a>
+              <a href="" class="d-flex align-items-center">
+                <i class="bi bi-emoji-laughing  " style="color:rgb(228, 228, 0)"></i> <span
+                  class="text-center ">Feeling/Activity</span>
+              </a>
+
+            </div>
+            <!--  End card  header-->
+
+          </div>
+          <!-- Card body  -->
+          <div class="card mt-3 container-fluid">
+            <div class="card-header d-flex align-items-center">
+              <picture>
+                <img src="./assest/imageAndIcon/profile-img.jpg" class="img-fluid rounded-circle" alt="image desc" id="profile">
+              </picture>
+              <div class="card_story d-grid">
+                <span class="mt-2 mx-2 text-center">
+                  <div class="name d-flex align-items-center ">
+                    <p><strong>Ranjan Kharel <small> is with</small> shrwan Prasai <small> and
+                        </small> 4 others</strong></p>
+                    <div class="me-auto"><button type="button" class="btn-close mx-5 me-auto"
+                        aria-label="Close"></button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body ">
+              <h4 class="card-title fs-5 fw-900">Attitude Quotes</h4>
+              <p class="card-text ">Don't waste your words on people who deserve your silence. ...
+              </p>
+              <picture>
+                <img src="./assest/imageAndIcon/hero-bg.jpg" class="img-fluid rounded-2" alt="image desc">
+              </picture>
+            </div>
+            <div class="card-footer text-muted">
+              <div class="" id="like_cmt">
+                <span data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Like"
+                  style="color:red;--bg: rgba(128, 125, 125, 0.565);"><i class="bi bi-heart-fill "></i></span>
+                <span data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Comment"
+                  style="color:rgba(82, 82, 229, 0.872); --bg: rgba(128, 125, 125, 0.565);"><i
+                    class="bi bi-chat-square-dots "></i></span>
+                <span data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Tag"
+                  style="color:rgba(25, 19, 19, 0.849);--bg: rgba(128, 125, 125, 0.565);"><i
+                    class="bi bi-bookmark-heart-fill"></i></span>
+
+              </div>
+              <div class="CmtInp mt-3 d-flex align-items-center container-fluid  justify-content-between">
+                <picture>
+                  <img src="./assest/imageAndIcon/profile-img.jpg" class="img-fluid rounded-circle" alt="image desc"
+                    id="profile_cmt">
+                </picture>
+                <form class="mx-2 container">
+                  <div class="form-outline">
+                    <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                    <label class="form-label" for="formControlLg">Write Comment...</label>
+                  </div>
+                </form>
+                <div class="emoji d-flex">
+                  <span class=""><i class="bi bi-emoji-heart-eyes" style=" --c:rgb(251, 163, 0);"></i></span>
+                  <span class=""><i class="bi bi-gift-fill" style=" --c:red;"></i></span>
+                  <span class=""><i class="bi bi-camera" style=" --c:rgb(0, 0, 0);"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-3 container-fluid">
+            <div class="card-header d-flex align-items-center">
+              <picture>
+                <img src="./assest/imageAndIcon/profile-img.jpg" class="img-fluid rounded-circle" alt="image desc" id="profileImg">
+              </picture>
+              <div class="card_story d-grid">
+                <span class="mt-2 mx-2 text-center">
+                  <div class="name d-flex align-items-center ">
+                    <p><strong>Ranjan Kharel <small> is with</small> shrwan Prasai <small> and
+                        </small> 4 others</strong></p>
+                    <div class="me-auto"><button type="button" class="btn-close mx-5 me-auto"
+                        aria-label="Close"></button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body ">
+              <h4 class="card-title fs-5 fw-900">Attitude Quotes</h4>
+              <p class="card-text ">Don't waste your words on people who deserve your silence. ...
+              </p>
+              <picture>
+                <img src="./assest/imageAndIcon/hero-bg.jpg" class="img-fluid rounded-2" alt="image desc">
+              </picture>
+            </div>
+            <div class="card-footer text-muted">
+              <div class="" id="like_cmt">
+                <span data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Like"
+                  style="color:red;--bg: rgba(128, 125, 125, 0.565);"><i class="bi bi-heart-fill "></i></span>
+                <span data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Comment"
+                  style="color:rgba(82, 82, 229, 0.872); --bg: rgba(128, 125, 125, 0.565);"><i
+                    class="bi bi-chat-square-dots "></i></span>
+                <span data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Tag"
+                  style="color:rgba(25, 19, 19, 0.849);--bg: rgba(128, 125, 125, 0.565);"><i
+                    class="bi bi-bookmark-heart-fill"></i></span>
+
+              </div>
+              <div class="CmtInp mt-3 d-flex align-items-center container-fluid  justify-content-between">
+                <picture>
+                  <img src="./assest/imageAndIcon/profile-img.jpg" class="img-fluid rounded-circle" alt="image desc"
+                    id="profile_cmt">
+                </picture>
+                <form class="mx-2 container">
+                  <div class="form-outline">
+                    <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                    <label class="form-label" for="formControlLg">Write Comment...</label>
+                  </div>
+                </form>
+                <div class="emoji d-flex">
+                  <span class=""><i class="bi bi-emoji-heart-eyes" style=" --c:rgb(251, 163, 0);"></i></span>
+                  <span class=""><i class="bi bi-gift-fill" style=" --c:red;"></i></span>
+                  <span class=""><i class="bi bi-camera" style=" --c:rgb(0, 0, 0);"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-3 container-fluid">
+            <div class="card-header d-flex align-items-center">
+              <picture>
+                <img src="./assest/imageAndIcon/profile-img.jpg" class="img-fluid rounded-circle" alt="image desc" id="profile">
+              </picture>
+              <div class="card_story d-grid">
+                <span class="mt-2 mx-2 text-center">
+                  <div class="name d-flex align-items-center ">
+                    <p><strong>Ranjan Kharel <small> is with</small> shrwan Prasai <small> and
+                        </small> 4 others</strong></p>
+                    <div class="me-auto"><button type="button" class="btn-close mx-5 me-auto"
+                        aria-label="Close"></button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body ">
+              <h4 class="card-title fs-5 fw-900">Attitude Quotes</h4>
+              <p class="card-text ">Don't waste your words on people who deserve your silence. ...
+              </p>
+              <picture>
+                <img src="./assest/imageAndIcon/hero-bg.jpg" class="img-fluid rounded-2" alt="image desc">
+              </picture>
+            </div>
+            <div class="card-footer text-muted">
+              <div class="" id="like_cmt">
+                <span data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Like"
+                  style="color:red;--bg: rgba(128, 125, 125, 0.565);"><i class="bi bi-heart-fill "></i></span>
+                <span data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Comment"
+                  style="color:rgba(82, 82, 229, 0.872); --bg: rgba(128, 125, 125, 0.565);"><i
+                    class="bi bi-chat-square-dots "></i></span>
+                <span data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Tag"
+                  style="color:rgba(25, 19, 19, 0.849);--bg: rgba(128, 125, 125, 0.565);"><i
+                    class="bi bi-bookmark-heart-fill"></i></span>
+
+              </div>
+              <div class="CmtInp mt-3 d-flex align-items-center container-fluid  justify-content-between">
+                <picture>
+                  <img src="./assest/imageAndIcon/profile-img.jpg" class="img-fluid rounded-circle" alt="image desc"
+                    id="profile_cmt">
+                </picture>
+                <form class="mx-2 container">
+                  <div class="form-outline">
+                    <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                    <label class="form-label" for="formControlLg">Write Comment...</label>
+                  </div>
+                </form>
+                <div class="emoji d-flex">
+                  <span class=""><i class="bi bi-emoji-heart-eyes" style=" --c:rgb(251, 163, 0);"></i></span>
+                  <span class=""><i class="bi bi-gift-fill" style=" --c:red;"></i></span>
+                  <span class=""><i class="bi bi-camera" style=" --c:rgb(0, 0, 0);"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  End Card body  -->
+
+
+        </div>
+
+      </section>
+      <!-- End Main Body -->
+
+      <!-- Right chat List -->
+      <section class="col-3 " style="height:100vh; ">
+        <aside class="pt-5 mt-5  p-3" style="width:25%;">
+          <header class="chats_box">
+            <div>
+              <span>Chats</span>
+            </div>
+            <div class="Icons">
+              <span data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Option"> <i class="bi bi-three-dots"
+                  style="--fs:20px"></i></span>
+              <span data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="See All Message"> <i
+                  class="bi bi-arrows-fullscreen " style="--fs:15px"></i></span>
+              <span data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Create A New Room"> <i
+                  class="bi bi-camera-video-fill " style="--fs:20px"></i></span>
+              <span data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="New Message"> <i
+                  class="bi bi-pencil-square" style="--fs:20px"></i></span>
+            </div>
+
+          </header>
+          <div class="input-group" style="width:95%;">
+            <div class="form-outline">
+              <input type="search" id="form1" class="form-control" />
+              <label class="form-label" for="form1"> <i class="bi bi-search"></i> Search</label>
+            </div>
+          </div>
+
+          <a href="" class="d-flex align-items-center mt-atuo" id="Inbox_user">
+            <picture>
+              <img src="./assest/imageAndIcon/profile-img.jpg" class="img-fluid rounded-circle" alt="Inbox_User" id="Inbox_img">
+            </picture>
+            <p class="mx-2 d-grid font-monospace mt-3 "><big>Matrika Prasai</big> <small
+                class="text-muted fw-lighter">The video Chat Ended 15h</small></p>
+          </a>
+          <a href="" class="d-flex align-items-center mt-atuo" id="Inbox_user">
+            <picture>
+              <img src="./assest/imageAndIcon/profile-img.jpg" class="img-fluid rounded-circle" alt="Inbox_User" id="Inbox_img">
+            </picture>
+            <p class="mx-2 d-grid font-monospace mt-3 "><big>Matrika Prasai</big> <small
+                class="text-muted fw-lighter">The video Chat Ended 15h</small></p>
+          </a>
+          <a href="" class="d-flex align-items-center mt-atuo" id="Inbox_user">
+            <picture>
+              <img src="./assest/imageAndIcon/profile-img.jpg" class="img-fluid rounded-circle" alt="Inbox_User" id="Inbox_img">
+            </picture>
+            <p class="mx-2 d-grid font-monospace mt-3 "><big>Matrika Prasai</big> <small
+                class="text-muted fw-lighter">The video Chat Ended 15h</small></p>
+          </a>
+         
+        </aside>
+      </section>
+      <!--  End Right chat List -->
+
+    </div>
+  </main>
+
+</body>
+
+</html>
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+
+<!-- for  custom js file   -->
+<script src="./assest/js/js.js"></script>
